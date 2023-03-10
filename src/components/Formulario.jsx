@@ -84,7 +84,7 @@ const Formulario = ( {pacientes, setPacientes, paciente, setPaciente} ) => {
 
       <p className='mt-5 text-center mb-10'>
         Añade Pacientes y {''}
-        <span className='text-indigo-600 font-bold text-lg'>Administralos</span>
+        <span className='text-indigo-600 font-bold text-lg'>Administralos.</span>
       </p>
 
       {/* Formulario */}
@@ -106,7 +106,7 @@ const Formulario = ( {pacientes, setPacientes, paciente, setPaciente} ) => {
           <input 
             id='mascota'
             type="text"
-            placeholder='Nombre de la Mascota'
+            placeholder='Nombre de la mascota'
             className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
             value={nombre}
             onChange = { (e) => setNombre(e.target.value) }
@@ -129,12 +129,12 @@ const Formulario = ( {pacientes, setPacientes, paciente, setPaciente} ) => {
         
         <div className='mb-5'> {/* Campo formulario */}
           <label htmlFor='email' className='block text-gray-700 uppercase font-bold'>
-            Nombre email
+            Email
           </label>
           <input 
             id='email'
             type="email"
-            placeholder='Email Contacto Propeitario'
+            placeholder='Email contacto'
             className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
             value={email}
             onChange = { (e) => setEmail(e.target.value) }
@@ -156,11 +156,11 @@ const Formulario = ( {pacientes, setPacientes, paciente, setPaciente} ) => {
 
         <div className='mb-5'> {/* Campo formulario */}
           <label htmlFor='sintomas' className='block text-gray-700 uppercase font-bold'>
-            Sintomas
+            Síntomas 
           </label>
           <textarea
           id='sintomas'
-          placeholder='Escribe los sintomas'
+          placeholder='Escribe los síntomas'
           className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
           value={sintomas}
           onChange = { (e) => setSintomas(e.target.value) }
